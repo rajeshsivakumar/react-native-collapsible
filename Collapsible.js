@@ -8,6 +8,7 @@ import {
   Animated,
   Easing,
   View,
+  ViewPropTypes
 } from 'react-native';
 
 const ANIMATED_EASING_PREFIXES = ['easeInOut', 'easeOut', 'easeIn'];
@@ -25,7 +26,7 @@ class Collapsible extends Component {
       PropTypes.string,
       PropTypes.func,
     ]),
-    style: View.propTypes.style,
+    style: ViewPropTypes.style,
   };
 
   static defaultProps = {
